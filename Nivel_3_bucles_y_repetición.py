@@ -68,3 +68,4 @@ while intento != num_secret:
 
 # Ejercicio 18 ####################################################################
 
+#https://github.com/daveshb/riwipython/blob/main/modulo1/semana1/Taller1.md
