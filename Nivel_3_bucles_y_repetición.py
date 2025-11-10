@@ -29,7 +29,7 @@ print(f" La sumatoria del 1 al n es {suma} ")
 
 tab = int(input(" Tabla de multiplicar "))
 
-for i in range(1,tab+1):
+for i in range(1,11):
     print(f"{tab} x {i} = {tab * i} ")
 
 
@@ -66,6 +66,16 @@ while intento != num_secret:
         print("¡Felicitaciones! Adivinaste el número:", num_secret)
 
 
-# Ejercicio 18 ####################################################################
+# Ejercicio 18 ###################################################################
 
 #https://github.com/daveshb/riwipython/blob/main/modulo1/semana1/Taller1.md
+
+intentos_num = int(input(" Por favor ingresa el valor a sumar "))
+suma_total = 0
+
+while intentos_num != 0:
+    suma_total += intentos_num
+    intentos_num = int(input(" Por favor ingresa otro valor "))
+
+print(f" La suma total es {suma_total}")
+ 
