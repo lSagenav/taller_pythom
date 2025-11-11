@@ -59,3 +59,62 @@ else:
 
 # Ejercicio 22 Lista de números y promedio. ##################################################################
 
+numeros = []
+cantidad = int(input("¿Cuántos números vas a ingresar? "))
+
+for i in range(cantidad):
+    numero = int(input(f"Ingrese el número {i+1}: "))
+    numeros.append(numero)
+
+promedio = sum(numeros) / len(numeros)
+
+print(f"La lista de números es: {numeros}")
+print(f"El promedio es: {promedio}")
+
+
+# Ejercicio 23 Números pares: guardar solo los pares. #########################################################
+import random
+
+numList = int(input("por favor ingresa la cantidad de numeros que deseas tener "))
+listNum = [numList]
+listPares = []
+
+for i in range (numList):
+    numero = random.randint(1, 100)
+    listNum.append(numero)
+
+for numero in listNum:
+    if numero % 2 == 0:
+        listPares.append(numero)
+
+print(f" la lista orogonal es esta {listNum}")
+print(f" la lista con los pares es {listPares}")
+
+
+# Ejercicio 22 Eliminar duplicados. ##############################################################################
+
+numer = int(input(" Por favor ingresa un numero "))
+lista = [numer]
+sin_duplicados =[]
+eliminados = []
+
+for i in range(numer):
+    number = int(input(f" Ingresa el numero {i + 1 } "))
+    lista.append(number)
+
+
+for num in lista:
+    if num not in sin_duplicados:
+        sin_duplicados.append(num)
+
+for num in lista:
+    if lista.count(num) > 1 and num not in eliminados:
+         eliminados.append(num)
+
+
+print(f" Lista orogial es {lista} ")
+print(f" Lista sin duplicados  {sin_duplicados} ")
+print(f" los numeros duplicados son  {eliminados} ")
+
+
+
