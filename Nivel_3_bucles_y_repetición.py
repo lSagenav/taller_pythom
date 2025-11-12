@@ -78,4 +78,3 @@ while intentos_num != 0:
     intentos_num = int(input(" Por favor ingresa otro valor "))
 
 print(f" La suma total es {suma_total}")
- 
